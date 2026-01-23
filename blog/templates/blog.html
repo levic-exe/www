@@ -18,6 +18,12 @@
             {% if page.extra.desc %}
                 <p style="margin: 5px;">{{ page.extra.desc }}</p>
             {% endif %}
+            {% if page.extra.cat %}
+                <p style="font-size: 15px; position: absolute; top: 2px; right: 2px;">{{ page.extra.cat }}</p>
+            {% endif %}
+            {% if not page.extra.cat %}
+                <p style="font-size: 15px; position: absolute; top: 2px; right: 2px;">bits and bobs</p>
+            {% endif %}
             <p style="font-size: smaller; position: absolute; bottom: 2px; right: 2px;">{{ page.extra.datetime }}</p>
         </div>
         {% endfor %}
