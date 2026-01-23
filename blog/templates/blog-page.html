@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="card">
+  <div class="card-header">
+    <h4>
+      {{ page.title }}
+    </h4>
+  </div>
+  <div class="card-body">
+    <div style="color: #262424; position: relative;" class="depressed-box-thing">
+      <p style="font-size: smaller; position: absolute; right: 2px;">{{ page.extra.datetime }}</p><br>
+      <h1 class="pagetitleheader">{{ page.title }}</h1>
+      {{ page.content | safe }}
+    </div>
+  </div>
+</div>
+{% endblock content %}

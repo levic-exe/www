@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="card">
+    <div class="card-header">
+        <h4 class="title">
+        {{ section.title }}
+        </h4>
+    </div>
+    <div class="card-body">
+        <!-- If you are using pagination, section.pages will be empty.
+            You need to use the paginator object -->  
+        {% for page in section.pages %}
+        <div style="position: relative;" class="depressed-box-thing">
+            <a href="{{ page.permalink | safe }}">
+                <h3 style="margin: 5px;">{{ page.title }}</h3>
+            </a>
+            {% if page.extra.desc %}
+                <p style="margin: 5px;">{{ page.extra.desc }}</p>
+            {% endif %}
+            <p style="font-size: smaller; position: absolute; bottom: 2px; right: 2px;">{{ page.extra.datetime }}</p>
+        </div>
+        {% endfor %}
+    </div>
+</div>
+{% endblock content %}
