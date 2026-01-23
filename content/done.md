@@ -5,6 +5,6 @@ title = "done"
 date = 2025-10-12T16:32:36-04:00
 [extra]
 desc = "just finished setting up this blog!"
-datetime = "Oct 12, 2025 at 4:32PM"
+datetime = "Oct 12, 2025 at 4:32 PM"
 +++
 we shall see if i actually end up using this, but i just finished setting this blog up and i am gonna try and make posts for my new projects!
